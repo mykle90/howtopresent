@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      .hljs-line-numbers {
-        text-align: right;
-        border-right: 1px solid #ccc;
-        color: #999;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-    </style>
     <title>Hvordan presentere kode på en effektiv og sexy måte</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link href="./dist/bekk.css" type="text/css" rel="stylesheet">
@@ -27,7 +14,9 @@ class: front-page
 
 ## 
 
-Sjekk ut [remark](https://github.com/gnab/remark)
+[Remark](https://github.com/gnab/remark)
+
+[BEKK Remark](https://github.com/bekk/remark)
 
 Tore Myklebust
 
@@ -35,9 +24,32 @@ Tore Myklebust
 
 ---
 
-class: middle center
+# Remark - kort introduksjon
 
-# Remark - presentasjon skrevet i markdown eller HTML
+* Man skriver presentasjonen sin i markdown eller HTML
+
+---
+
+class: cols two
+
+# Hva med remark
+
+.col[
+  ## Fordeler
+
+  * Enkel syntax highlighting
+  * Kildekontroll
+  * Alle slides blir seende relativt gode ut
+  * Enkelt å både skrive og redigere kode
+]
+
+.col[
+  ## Ulemper
+
+  * Mer tidkrevende å lage gode slides
+  * Ingen WYSIWYG eller bildebehandler
+]
+
 
 ---
 
@@ -99,154 +111,6 @@ static void Main(string[] args)
 
 ---
 
-
-background-image: url(images/shoes.jpg)
-class: middle center
-
-
-  # Stort bilde med text
-
-
-</div>
----
-
-background-image: url(images/shoes.jpg)
-class: middle center
-
-
-  # Stort bilde med rundt boks
-
-  .circle.red.top-right[
-    Fin tekst
-  ]
-
----
-
-# Stort bilde
-
-Bruk property `background-image` og legg til et stort bilde.
-
-Eksempel-slide:
-
-  ```html
-  background-image: url(images/shoes.jpg)
-  class: middle center
-
-
-  # Stort bilde med rundt boks
-
-  .circle.red.top-right[
-    Fin tekst
-  ]
-  ```
-
----
-
-# Lister
-
-* Bare bruk `*`
-* ... så får du en liste
-
-Og:
-
-1. Nummererte lister er også mulig!
-2. Bare skriv `1.`, `2.`, og så videre
-
----
-
-# Hva med highlighting av kode?
-
-Et Ruby-eksempel:
-
-  ```csharp
-  using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CodeExamples
-{
-    class Program
-    {
-*        public static int SumArray(int[] numbers)
-*        {
-*            var sum = 0;
-*            foreach (var number in numbers)
-*            {
-*                sum += number;
-*            }
-*            return sum;
-*        }
-    }
-}
-  ```
-
----
-
-# Lenker og knapper
-
-  [vanlig lenke](#)
-
-  <a href="#" class="btn">Stor knapp</a>
-
-  <a href="#" class="btn loud">Større knapp</a>
-
-
-```html
-  [vanlig lenke](#)
-
-  <a href="#" class="btn">Stor knapp</a>
-
-  <a href="#" class="btn loud">Større knapp</a>
-```
-
-Markdown støtter ikke lenker med klasse, så vi må frem med litt html
-
----
-
-class: cols three
-
-# 3 kolonner
-
-.col[
-  ## Første kolonne.
-
-  For å få til kolonner må vi bruke litt HTML, sammen med to klasser.
-
-  ```html
-  class: cols three
-
-  .col[
-    kolonne 1
-  ]
-
-  .col[
-    kolonne 2
-  ]
-
-  .col[
-    kolonne 3
-  ]
-  ```
-]
-
-.col[
-  ## Andre kolonne
-]
-
-.col[
-  ## Tredje kolonne
-
-  Vi støtter også to kolonner ved bruk av klassen `two` istedenfor `three`
-
-  ```html
-  class: cols two
-  ```
-]
-
----
-
 class: cols three
 
 # Kolonner støtter Markdown
@@ -274,52 +138,6 @@ class: cols three
 
   Overskrifter fungerer også i kolonner!
 ]
-
----
-
-class: middle center
-
-.card[
-  .picture[
-    ![Ola Normann](https://intern.bekk.no/Employees/ViewEmployeeImage.ashx?thumbnail=true&thumbsize=500&employee=374)
-  ]
-  .name[Ola Normann]
-  .title[Systemutvikler]
-  .department[Technology]
-  .phone[987 65 432]
-  .email[ola.normann@bekk.no]
-]
-
-.card[
-  .picture[
-    ![Some Guy](https://intern.bekk.no/Employees/ViewEmployeeImage.ashx?thumbnail=true&thumbsize=500&employee=467)
-  ]
-  .name[Some Guy]
-  .title[Systemutvikler]
-  .department[Technology]
-  .phone[987 65 432]
-  .email[some.guy@bekk.no]
-]
-
----
-
-# Ansattekort
-
-```html
-  class: middle center
-
-  .card[
-    .picture[
-      ![Some Guy](https://intern.bekk.no/Employees/ViewEmployeeImage.ashx?thumbnail=true&thumbsize=500&employee=467)
-    ]
-    .name[Some Guy]
-    .title[Systemutvikler]
-    .department[Technology]
-    .phone[987 65 432]
-    .email[some.guy@bekk.no]
-  ]
-```
-
 ---
 
 # Noen lenker
