@@ -27,6 +27,9 @@ Tore Myklebust
 # Remark - kort introduksjon
 
 * Man skriver presentasjonen sin i markdown eller HTML
+* "Presentasjonsmotoren" er skrevet i JavaScript og CSS
+* Kan praktisk talt kjøres i alle nettlesere
+* Man kan style enkeltpunkter med CSS
 
 ---
 
@@ -38,18 +41,32 @@ class: cols two
   ## Fordeler
 
   * Enkel syntax highlighting
-  * Kildekontroll
-  * Alle slides blir seende relativt gode ut
+  * Kildekontroll - Git!
   * Enkelt å både skrive og redigere kode
+  * CSS klasser kan style enkeltelementer
 ]
 
 .col[
   ## Ulemper
 
   * Mer tidkrevende å lage gode slides
-  * Ingen WYSIWYG eller bildebehandler
+  * Ingen WYSIWYG eller verktøy som feks. bildebehandler
+  * Dårlig med animasjonsstøtte
 ]
 
+
+---
+
+# Kode i remark
+
+```
+\```csharp
+
+var a = 0;
+
+\```\
+
+```
 
 ---
 
@@ -109,48 +126,13 @@ static void Main(string[] args)
 }
   ```
 
----
-
-class: cols three
-
-# Kolonner støtter Markdown
-
-.col[
-  .circle.red.centered[Kolonne 1]
-
-  *em* sweet
-
-  [kimjoar.net](http://kimjoar.net)
-]
-
-.col[
-  .circle.green.centered[Kolonne 2]
-
-  * liste!
-  * nytt element
-  * *winning*
-]
-
-.col[
-  .circle.yellow.centered[Kolonne 3]
-
-  ## Overskrift
-
-  Overskrifter fungerer også i kolonner!
-]
----
-
-# Noen lenker
-
-* [remark](https://github.com/gnab/remark)
-* [Markdown syntax](http://daringfireball.net/projects/markdown/syntax)
 
 ---
 
 class: center middle bekk-top
 
-# TAKK!
-Bjarne BEKK-konsulent
+# TAKK FOR MEG!
+Tore Myklebust
 
 
     </textarea>
